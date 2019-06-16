@@ -11,14 +11,19 @@ This script contains the following functions:
 
 """
 import time
+import os 
+
+TIME_TO_SLEEP = 5
+TOTAL_TIME_TO_WORK = 60
+
 
 def say_hello():
     """Print hello for one minute every five seconds.."""
     time_elapsed = 0
-    while time_elapsed <= 60:
+    while time_elapsed <= TOTAL_TIME_TO_WORK:
         print('hello')
-        time.sleep(5)
-        time_elapsed += 5
+        time.sleep(TIME_TO_SLEEP)
+        time_elapsed += TIME_TO_SLEEP
 
 if __name__ == '__main__':
     say_hello()
