@@ -23,7 +23,7 @@ def say_hello():
     """Print hello for one minute every five seconds.."""
     time_elapsed = 0
     while time_elapsed <= TOTAL_TIME_TO_WORK:
-        print('hello')
+        print('hello2')
         time.sleep(TIME_TO_SLEEP)
         time_elapsed += TIME_TO_SLEEP
 
