@@ -15,4 +15,3 @@ def test_say_hello_does_not_print_bye(capsys, monkeypatch):
     say_hello()
     captured = capsys.readouterr()
     assert 'bye' not in captured.out
-
